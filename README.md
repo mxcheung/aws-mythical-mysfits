@@ -49,5 +49,16 @@ website-bucket-policy
 }
 ```
 
+
+```
+aws s3api delete-bucket-policy --bucket cheungm-bucket-name-20201227
+aws s3api put-bucket-policy --bucket cheungm-bucket-name-20201227 --policy file://~/environment/aws-modern-application-workshop/module-1/aws-cli/website-bucket-policy.json
+cheungm:~/environment/aws-modern-application-workshop (java) $ curl -I "https://cheungm-bucket-name-20201227.s3-$(aws configure get region).amazonaws.com/index.html"
+HTTP/1.1 200 OK
+aws s3 website s3://cheungm-bucket-name-20201227 --index-document index.html
+
+http://cheungm-bucket-name-20201227.s3-website-ap-southeast-2.amazonaws.com
+```
+
 ## Links
 https://github.com/aws-samples/aws-modern-application-workshop
