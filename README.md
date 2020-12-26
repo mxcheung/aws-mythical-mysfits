@@ -65,5 +65,9 @@ http://cheungm-bucket-name-20201227.s3-website-ap-southeast-2.amazonaws.com/
 Creating a Service with AWS Fargate
 https://github.com/aws-samples/aws-modern-application-workshop/tree/java/module-2
 
+```
+aws cloudformation create-stack --stack-name MythicalMysfitsCoreStack --capabilities CAPABILITY_NAMED_IAM --template-body file://~/environment/aws-modern-application-workshop/module-2/cfn/core.yml   
+```
+
 ## Links
 https://github.com/aws-samples/aws-modern-application-workshop
