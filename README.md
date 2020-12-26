@@ -61,5 +61,9 @@ aws s3 website s3://cheungm-bucket-name-20201227 --index-document index.html
 http://cheungm-bucket-name-20201227.s3-website-ap-southeast-2.amazonaws.com/
 
 
+# Module 2
+Creating a Service with AWS Fargate
+https://github.com/aws-samples/aws-modern-application-workshop/tree/java/module-2
+
 ## Links
 https://github.com/aws-samples/aws-modern-application-workshop
