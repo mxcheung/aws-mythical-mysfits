@@ -163,5 +163,34 @@ https://docs.docker.com/engine/reference/commandline/login/#credentials-store
 Login Succeeded
 
 ```
+
+
+docker push 918300033687.dkr.ecr.ap-southeast-2.amazonaws.com/mythicalmysfits/service:latest
+aws ecr describe-images --repository-name mythicalmysfits/service
+
+```
+cheungm:~/environment/aws-modern-application-workshop/module-2/app (java) $ docker push 918300033687.dkr.ecr.ap-southeast-2.amazonaws.com/mythicalmysfits/service:latest
+The push refers to repository [918300033687.dkr.ecr.ap-southeast-2.amazonaws.com/mythicalmysfits/service]
+
+
+
+cheungm:~/environment/aws-modern-application-workshop/module-2/app (java) $ aws ecr describe-images --repository-name mythicalmysfits/service
+{
+    "imageDetails": [
+        {
+            "registryId": "918300033687",
+            "repositoryName": "mythicalmysfits/service",
+            "imageDigest": "sha256:3feaf9e7336b57f60e4861a0a3de244f7090a8a97a5233d9f66d5b0a720526a9",
+            "imageTags": [
+                "latest"
+            ],
+            "imageSizeInBytes": 276280045,
+            "imagePushedAt": 1609021761.0,
+            "imageManifestMediaType": "application/vnd.docker.distribution.manifest.v2+json",
+            "artifactMediaType": "application/vnd.docker.container.image.v1+json"
+        }
+    ]
+}
+```
 ## Links
 https://github.com/aws-samples/aws-modern-application-workshop
