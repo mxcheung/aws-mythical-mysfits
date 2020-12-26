@@ -152,6 +152,16 @@ cheungm:~/environment/aws-modern-application-workshop/module-2/app (java) $ aws 
 }
 
 ```
+$(aws ecr get-login --no-include-email)
+```
+cheungm:~/environment/aws-modern-application-workshop/module-2/app (java) $ $(aws ecr get-login --no-include-email)
+WARNING! Using --password via the CLI is insecure. Use --password-stdin.
+WARNING! Your password will be stored unencrypted in /home/ec2-user/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
 
+Login Succeeded
+
+```
 ## Links
 https://github.com/aws-samples/aws-modern-application-workshop
