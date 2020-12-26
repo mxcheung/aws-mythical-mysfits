@@ -105,6 +105,28 @@ Installed:
 [INFO] ------------------------------------------------------------------------
 cheungm:~/environment/aws-modern-application-workshop/module-2/app/service (java) $
 ```
+## Docker
+
+```
+cheungm:~/environment/aws-modern-application-workshop/module-2/app/service (java) $ aws sts get-caller-identity
+cd ..
+docker build . -t 918300033687.dkr.ecr.ap-southeast-2.amazonaws.com/mythicalmysfits/service:latest
+docker run -p 8080:8080 918300033687.dkr.ecr.ap-southeast-2.amazonaws.com/mythicalmysfits/service:latest
+{
+    "UserId": "AIDA5LTXSQKL4OFK3G32D",
+    "Account": "918300033687",
+    "Arn": "arn:aws:iam::918300033687:user/cheungm"
+}
+
+Successfully built 0f554770e7d4
+Successfully tagged 918300033687.dkr.ecr.ap-southeast-2.amazonaws.com/mythicalmysfits/service:latest
+
+2020-12-26 22:19:52.663  INFO 1 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-12-26 22:19:52.759  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-26 22:19:52.766  INFO 1 --- [           main] com.example.MythicalMysfitsApplication   : Started MythicalMysfitsApplication in 6.669 seconds (JVM running for 7.984)
+
+https://f5c898c6e65144dd843332c102e79e82.vfs.cloud9.ap-southeast-2.amazonaws.com/mysfits
+```
 
 ## Links
 https://github.com/aws-samples/aws-modern-application-workshop
