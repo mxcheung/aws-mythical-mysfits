@@ -192,5 +192,14 @@ cheungm:~/environment/aws-modern-application-workshop/module-2/app (java) $ aws 
     ]
 }
 ```
+aws ecs create-cluster --cluster-name MythicalMysfits-Cluster
+```
+aws logs create-log-group --log-group-name mythicalmysfits-logs
+aws ecs register-task-definition --cli-input-json file://~/environment/aws-modern-application-workshop/module-2/aws-cli/task-definition.json
+aws elbv2 create-load-balancer --name mysfits-nlb --scheme internet-facing --type network --subnets subnet-076b3f6261201f184  subnet-0f9781c1ea505e25c  > ~/environment/nlb-output.json
+aws elbv2 create-target-group --name MythicalMysfits-TargetGroup --port 8080 --protocol TCP --target-type ip --vpc-id vpc-0d482f57e3ef741d5 --health-check-interval-seconds 10 --health-check-path / --health-check-protocol HTTP --healthy-threshold-count 3 --unhealthy-threshold-count 3 > opn
+aws elbv2 create-listener --default-actions TargetGroupArn=arn:aws:elasticloadbalancing:ap-southeast-2:918300033687:targetgroup/MythicalMysfits-TargetGroup/7a0bbdb0201c083e,Type=forward --load-balancer-arn arn:aws:elasticloadbalancing:ap-southeast-2:918300033687:loadbalancer/net/mysfits-nlb/7cfb1105f45d2351 --port 80 --protocol TCP
+
+```
 ## Links
 https://github.com/aws-samples/aws-modern-application-workshop
