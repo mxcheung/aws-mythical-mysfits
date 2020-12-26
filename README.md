@@ -27,6 +27,13 @@ cheungm:~/environment/aws-modern-application-workshop (java) $ aws s3 ls
 2020-12-23 22:47:51 cheungms3
 
 
+aws s3 cp ~/environment/aws-modern-application-workshop/module-1/web/index.html s3://cheungm-bucket-name-20201227/index.html
+
+cheungm:~/environment/aws-modern-application-workshop (java) $ curl -I "https://cheungm-bucket-name-20201227.s3-$(aws configure get region).amazonaws.com/index.html"
+
+HTTP/1.1 403 Forbidden
+
+
 
 ## Links
 https://github.com/aws-samples/aws-modern-application-workshop
