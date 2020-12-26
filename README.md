@@ -32,7 +32,7 @@ cheungm:~/environment/aws-modern-application-workshop (java) $ curl -I "https://
 HTTP/1.1 403 Forbidden
 ```
 
-
+website-bucket-policy
 ```
 {
   "Id": "MyPolicy",
