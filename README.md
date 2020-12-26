@@ -71,6 +71,10 @@ aws cloudformation create-stack --stack-name MythicalMysfitsCoreStack --capabili
 {
     "StackId": "arn:aws:cloudformation:ap-southeast-2:918300033687:stack/MythicalMysfitsCoreStack/9a0ec240-47c5-11eb-85da-02e88e2d9048"
 }
+
+cheungm:~/environment/aws-modern-application-workshop (java) $ aws cloudformation wait stack-create-complete --stack-name MythicalMysfitsCoreStack && echo "stack created"
+stack created
+
 ```
 
 ## Links
