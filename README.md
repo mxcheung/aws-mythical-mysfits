@@ -77,5 +77,24 @@ stack created
 
 ```
 
+
+Install Maven and build
+```
+sudo yum -y install java-1.8.0-openjdk-devel
+sudo alternatives --set java /usr/lib/jvm/java-1.8.0-openjdk.x86_64/bin/java
+sudo alternatives --set javac /usr/lib/jvm/java-1.8.0-openjdk.x86_64/bin/javac
+sudo wget http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo -O /etc/yum.repos.d/epel-apache-maven.repo
+sudo sed -i s/\$releasever/6/g /etc/yum.repos.d/epel-apache-maven.repo
+sudo yum install -y apache-maven
+cd ~/environment/aws-modern-application-workshop/module-2/app/service
+mvn clean install
+
+cheungm:~/environment/aws-modern-application-workshop (java) $ sudo alternatives --set java /usr/lib/jvm/java-1.8.0-openjdk.x86_64/bin/java
+/usr/lib/jvm/java-1.8.0-openjdk.x86_64/bin/java has not been configured as an alternative for java
+cheungm:~/environment/aws-modern-application-workshop (java) $ sudo alternatives --set javac /usr/lib/jvm/java-1.8.0-openjdk.x86_64/bin/javac
+Installed:
+  apache-maven.noarch 0:3.5.2-1.el6                                                                                                                                             
+```
+
 ## Links
 https://github.com/aws-samples/aws-modern-application-workshop
