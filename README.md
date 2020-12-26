@@ -67,6 +67,10 @@ https://github.com/aws-samples/aws-modern-application-workshop/tree/java/module-
 
 ```
 aws cloudformation create-stack --stack-name MythicalMysfitsCoreStack --capabilities CAPABILITY_NAMED_IAM --template-body file://~/environment/aws-modern-application-workshop/module-2/cfn/core.yml   
+
+{
+    "StackId": "arn:aws:cloudformation:ap-southeast-2:918300033687:stack/MythicalMysfitsCoreStack/9a0ec240-47c5-11eb-85da-02e88e2d9048"
+}
 ```
 
 ## Links
