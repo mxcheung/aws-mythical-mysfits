@@ -17,15 +17,12 @@ aws s3 mb s3://cheungm-bucket-name-20201227
 
 aws s3 ls cheungm-bucket-name-20201227
 
-
+```
 cheungm:~/environment/aws-modern-application-workshop (java) $ aws s3 ls  
-
 2020-12-25 00:20:57 cf-templates-nkcon4duurt8-ap-southeast-2
-
 2020-12-26 21:28:00 cheungm-bucket-name-20201227
-
 2020-12-23 22:47:51 cheungms3
-
+```
 
 aws s3 cp ~/environment/aws-modern-application-workshop/module-1/web/index.html s3://cheungm-bucket-name-20201227/index.html
 
