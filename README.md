@@ -93,7 +93,17 @@ cheungm:~/environment/aws-modern-application-workshop (java) $ sudo alternatives
 /usr/lib/jvm/java-1.8.0-openjdk.x86_64/bin/java has not been configured as an alternative for java
 cheungm:~/environment/aws-modern-application-workshop (java) $ sudo alternatives --set javac /usr/lib/jvm/java-1.8.0-openjdk.x86_64/bin/javac
 Installed:
-  apache-maven.noarch 0:3.5.2-1.el6                                                                                                                                             
+  apache-maven.noarch 0:3.5.2-1.el6          
+  
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 02:34 min
+[INFO] Finished at: 2020-12-26T22:15:33Z
+[INFO] Final Memory: 31M/90M
+[INFO] ------------------------------------------------------------------------
+cheungm:~/environment/aws-modern-application-workshop/module-2/app/service (java) $
 ```
 
 ## Links
