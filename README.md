@@ -33,5 +33,21 @@ HTTP/1.1 403 Forbidden
 ```
 
 
+```
+{
+  "Id": "MyPolicy",
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "PublicReadForGetBucketObjects",
+      "Effect": "Allow",
+      "Principal": "*",
+      "Action": "s3:GetObject",
+      "Resource": "arn:aws:s3:::cheungm-bucket-name-20201227/*"
+    }
+  ]
+}
+```
+
 ## Links
 https://github.com/aws-samples/aws-modern-application-workshop
