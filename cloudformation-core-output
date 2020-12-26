@@ -1,0 +1,96 @@
+{
+    "Stacks": [
+        {
+            "StackId": "arn:aws:cloudformation:ap-southeast-2:918300033687:stack/MythicalMysfitsCoreStack/9a0ec240-47c5-11eb-85da-02e88e2d9048",
+            "StackName": "MythicalMysfitsCoreStack",
+            "Description": "This stack deploys the core network infrastructure and IAM resources to be used for a service hosted in Amazon ECS using AWS Fargate.",
+            "CreationTime": "2020-12-26T21:59:18.691Z",
+            "RollbackConfiguration": {},
+            "StackStatus": "CREATE_COMPLETE",
+            "DisableRollback": false,
+            "NotificationARNs": [],
+            "Capabilities": [
+                "CAPABILITY_NAMED_IAM"
+            ],
+            "Outputs": [
+                {
+                    "OutputKey": "CurrentAccount",
+                    "OutputValue": "918300033687",
+                    "Description": "REPLACE_ME_ACCOUNT_ID",
+                    "ExportName": "MythicalMysfitsCoreStack:CurrentAccount"
+                },
+                {
+                    "OutputKey": "FargateContainerSecurityGroup",
+                    "OutputValue": "sg-09958e039f704f9be",
+                    "Description": "REPLACE_ME_SECURITY_GROUP_ID",
+                    "ExportName": "MythicalMysfitsCoreStack:FargateContainerSecurityGroup"
+                },
+                {
+                    "OutputKey": "PublicSubnetOne",
+                    "OutputValue": "subnet-076b3f6261201f184",
+                    "Description": "REPLACE_ME_PUBLIC_SUBNET_ONE",
+                    "ExportName": "MythicalMysfitsCoreStack:PublicSubnetOne"
+                },
+                {
+                    "OutputKey": "ECSTaskRole",
+                    "OutputValue": "arn:aws:iam::918300033687:role/MythicalMysfitsCoreStack-ECSTaskRole-G4PBHNSAQ0SL",
+                    "Description": "REPLACE_ME_ECS_TASK_ROLE_ARN",
+                    "ExportName": "MythicalMysfitsCoreStack:ECSTaskRole"
+                },
+                {
+                    "OutputKey": "PrivateSubnetTwo",
+                    "OutputValue": "subnet-091f721f2629100a5",
+                    "Description": "REPLACE_ME_PRIVATE_SUBNET_TWO",
+                    "ExportName": "MythicalMysfitsCoreStack:PrivateSubnetTwo"
+                },
+                {
+                    "OutputKey": "CurrentRegion",
+                    "OutputValue": "ap-southeast-2",
+                    "Description": "REPLACE_ME_REGION",
+                    "ExportName": "MythicalMysfitsCoreStack:CurrentRegion"
+                },
+                {
+                    "OutputKey": "VPCId",
+                    "OutputValue": "vpc-0d482f57e3ef741d5",
+                    "Description": "REPLACE_ME_VPC_ID",
+                    "ExportName": "MythicalMysfitsCoreStack:VPCId"
+                },
+                {
+                    "OutputKey": "PublicSubnetTwo",
+                    "OutputValue": "subnet-0f9781c1ea505e25c",
+                    "Description": "REPLACE_ME_PUBLIC_SUBNET_TWO",
+                    "ExportName": "MythicalMysfitsCoreStack:PublicSubnetTwo"
+                },
+                {
+                    "OutputKey": "CodeBuildRole",
+                    "OutputValue": "arn:aws:iam::918300033687:role/MythicalMysfitsServiceCodeBuildServiceRole",
+                    "Description": "REPLACE_ME_CODEBUILD_ROLE_ARN",
+                    "ExportName": "MythicalMysfitsCoreStack:MythicalMysfitsServiceCodeBuildServiceRole"
+                },
+                {
+                    "OutputKey": "CodePipelineRole",
+                    "OutputValue": "arn:aws:iam::918300033687:role/MythicalMysfitsServiceCodePipelineServiceRole",
+                    "Description": "REPLACE_ME_CODEPIPELINE_ROLE_ARN",
+                    "ExportName": "MythicalMysfitsCoreStack:MythicalMysfitsServiceCodePipelineServiceRole"
+                },
+                {
+                    "OutputKey": "EcsServiceRole",
+                    "OutputValue": "arn:aws:iam::918300033687:role/MythicalMysfitsCoreStack-EcsServiceRole-RAIYNIFQA302",
+                    "Description": "REPLACE_ME_ECS_SERVICE_ROLE_ARN",
+                    "ExportName": "MythicalMysfitsCoreStack:EcsServiceRole"
+                },
+                {
+                    "OutputKey": "PrivateSubnetOne",
+                    "OutputValue": "subnet-0113ab356d5ff1c92",
+                    "Description": "REPLACE_ME_PRIVATE_SUBNET_ONE",
+                    "ExportName": "MythicalMysfitsCoreStack:PrivateSubnetOne"
+                }
+            ],
+            "Tags": [],
+            "EnableTerminationProtection": false,
+            "DriftInformation": {
+                "StackDriftStatus": "NOT_CHECKED"
+            }
+        }
+    ]
+}
