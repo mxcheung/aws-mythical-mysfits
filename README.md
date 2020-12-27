@@ -289,6 +289,7 @@ http://cheungm-bucket-name-20201227.s3-website-ap-southeast-2.amazonaws.com/
 
 Adding User and API features with Amazon API Gateway and AWS Cognito
 
+https://github.com/aws-samples/aws-modern-application-workshop/tree/java/module-4
 
 aws cognito-idp create-user-pool --pool-name MysfitsUserPool --auto-verified-attributes email
 
