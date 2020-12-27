@@ -255,6 +255,10 @@ git commit -m "Refactor and tidy code."
 git push
 ```
 
+# Module 3
+Adding a Data Tier with Amazon DynamoDB
+https://github.com/aws-samples/aws-modern-application-workshop/tree/java/module-3
+
 
 
 ## Links
