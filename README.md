@@ -218,6 +218,19 @@ aws s3 cp ~/environment/aws-modern-application-workshop/module-2/web/index.html 
 http://cheungm-bucket-name-20201227.s3-website-ap-southeast-2.amazonaws.com/
 
 
+## Code Build pipeline
+
+```
+aws s3 mb s3://cheungm-artifacts-bucket-name-20201227
+aws s3api put-bucket-policy --bucket cheungm-artifacts-bucket-name-20201227 --policy file://~/environment/aws-modern-application-workshop/module-2/aws-cli/artifacts-bucket-policy.json
+aws codecommit create-repository --repository-name MythicalMysfitsService-Repository
+aws codebuild create-project --cli-input-json file://~/environment/aws-modern-application-workshop/module-2/aws-cli/code-build-project.json
+aws codepipeline create-pipeline --cli-input-json file://~/environment/aws-modern-application-workshop/module-2/aws-cli/code-pipeline.json
+aws ecr set-repository-policy --repository-name mythicalmysfits/service --policy-text file://~/environment/aws-modern-application-workshop/module-2/aws-cli/ecr-policy.json
+```
+
+
+
 
 ## Links
 https://github.com/aws-samples/aws-modern-application-workshop
