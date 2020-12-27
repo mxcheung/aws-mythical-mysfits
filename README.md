@@ -285,6 +285,16 @@ aws s3 cp --recursive ~/environment/aws-modern-application-workshop/module-3/web
 http://cheungm-bucket-name-20201227.s3-website-ap-southeast-2.amazonaws.com/
 
 
+# Module 4
+
+Adding User and API features with Amazon API Gateway and AWS Cognito
+
+
+aws cognito-idp create-user-pool --pool-name MysfitsUserPool --auto-verified-attributes email
+
+
+aws cognito-idp create-user-pool-client --user-pool-id ap-southeast-2_l38vvj3ws --client-name MysfitsUserPoolClient
+
 
 ## Links
 https://github.com/aws-samples/aws-modern-application-workshop
