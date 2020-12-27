@@ -229,6 +229,27 @@ aws codepipeline create-pipeline --cli-input-json file://~/environment/aws-moder
 aws ecr set-repository-policy --repository-name mythicalmysfits/service --policy-text file://~/environment/aws-modern-application-workshop/module-2/aws-cli/ecr-policy.json
 ```
 
+## Refactoring
+
+```
+
+cd ~/environment/aws-modern-application-workshop/module-2/app/service
+mvn clean install
+
+cd ..
+docker build . -t 918300033687.dkr.ecr.ap-southeast-2.amazonaws.com/mythicalmysfits/service:latest
+
+docker run -p 8080:8080 918300033687.dkr.ecr.ap-southeast-2.amazonaws.com/mythicalmysfits/service:latest
+
+
+cp -r ~/environment/aws-modern-application-workshop/module-2/app/* ~/environment/MythicalMysfitsService-Repository/
+
+cd ~/environment/MythicalMysfitsService-Repository/
+
+git add .
+git commit -m "Refactor and tidy code."
+git push
+```
 
 
 
