@@ -231,6 +231,10 @@ aws ecr set-repository-policy --repository-name mythicalmysfits/service --policy
 
 ## Refactoring
 
+Testing the Service Locally
+
+https://f5c898c6e65144dd843332c102e79e82.vfs.cloud9.ap-southeast-2.amazonaws.com/mysfits
+
 ```
 
 cd ~/environment/aws-modern-application-workshop/module-2/app/service
