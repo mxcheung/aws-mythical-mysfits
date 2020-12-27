@@ -321,6 +321,13 @@ cheungm:~/environment $ aws apigateway create-deployment --rest-api-id j9fokp4mi
 }
 ```
 
+Test the API 
+
+https://j9fokp4mi6.execute-api.ap-southeast-2.amazonaws.com/prod/misfits
+
+
+{"message":"Missing Authentication Token"}
+
 
 ## Links
 https://github.com/aws-samples/aws-modern-application-workshop
