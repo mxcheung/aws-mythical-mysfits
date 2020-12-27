@@ -331,6 +331,8 @@ https://j9fokp4mi6.execute-api.ap-southeast-2.amazonaws.com/prod/misfits
 
 # Module 5
 
+Capturing User Behavior
+
 ```
 git clone   https://git-codecommit.ap-southeast-2.amazonaws.com/v1/repos/MythicalMysfitsStreamingService-Repository
 
