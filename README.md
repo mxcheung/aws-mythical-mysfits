@@ -297,5 +297,14 @@ aws cognito-idp create-user-pool --pool-name MysfitsUserPool --auto-verified-att
 aws cognito-idp create-user-pool-client --user-pool-id ap-southeast-2_l38vvj3ws --client-name MysfitsUserPoolClient
 
 
+cheungm:~/environment $ aws apigateway create-deployment --rest-api-id j9fokp4mi6 --stage-name prod
+```
+{
+    "id": "6wuzey",
+    "createdDate": 1609067470
+}
+```
+
+
 ## Links
 https://github.com/aws-samples/aws-modern-application-workshop
