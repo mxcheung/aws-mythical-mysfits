@@ -328,6 +328,11 @@ Amazon VPC
 AWS IAM
 AWS CloudFormation
 
+
+Log In /Register --> unable to confirm as email is blocked in sand pit environment
+http://cheungm-bucket-name-20201228.s3-website-us-east-1.amazonaws.com/
+
+
 ============================================================================
 
 ```
