@@ -200,6 +200,8 @@ aws elbv2 create-load-balancer --name mysfits-nlb --scheme internet-facing --typ
 aws elbv2 create-target-group --name MythicalMysfits-TargetGroup --port 8080 --protocol TCP --target-type ip --vpc-id vpc-0d482f57e3ef741d5 --health-check-interval-seconds 10 --health-check-path / --health-check-protocol HTTP --healthy-threshold-count 3 --unhealthy-threshold-count 3 > opn
 aws elbv2 create-listener --default-actions TargetGroupArn=arn:aws:elasticloadbalancing:ap-southeast-2:918300033687:targetgroup/MythicalMysfits-TargetGroup/7a0bbdb0201c083e,Type=forward --load-balancer-arn arn:aws:elasticloadbalancing:ap-southeast-2:918300033687:loadbalancer/net/mysfits-nlb/7cfb1105f45d2351 --port 80 --protocol TCP
 
+aws iam create-service-linked-role --aws-service-name ecs.amazonaws.com
+aws ecs create-service --cli-input-json file://~/environment/aws-modern-application-workshop/module-2/aws-cli/service-definition.json
 ```
 
 ### Test the service
