@@ -297,6 +297,22 @@ aws cognito-idp create-user-pool --pool-name MysfitsUserPool --auto-verified-att
 aws cognito-idp create-user-pool-client --user-pool-id ap-southeast-2_l38vvj3ws --client-name MysfitsUserPoolClient
 
 
+cheungm:~/environment $ aws apigateway import-rest-api --parameters endpointConfigurationTypes=REGIONAL --body file://~/environment/aws-modern-application-workshop/module-4/aws-cli/api-swagger.json --fail-on-warnings
+```
+{
+    "id": "j9fokp4mi6",
+    "name": "MysfitsApi",
+    "createdDate": 1609067342,
+    "apiKeySource": "HEADER",
+    "endpointConfiguration": {
+        "types": [
+            "REGIONAL"
+        ]
+    },
+    "disableExecuteApiEndpoint": false
+}
+```
+
 cheungm:~/environment $ aws apigateway create-deployment --rest-api-id j9fokp4mi6 --stage-name prod
 ```
 {
