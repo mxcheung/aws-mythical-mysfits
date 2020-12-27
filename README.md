@@ -338,5 +338,24 @@ git clone   https://git-codecommit.ap-southeast-2.amazonaws.com/v1/repos/Mythica
 
 ```
 
+
+```
+{
+    "repositoryMetadata": {
+        "accountId": "918300033687",
+        "repositoryId": "44ae58f3-4825-4c61-9287-de163c80b1e0",
+        "repositoryName": "MythicalMysfitsStreamingService-Repository",
+        "lastModifiedDate": 1609071215.689,
+        "creationDate": 1609071215.689,
+        "cloneUrlHttp": "https://git-codecommit.ap-southeast-2.amazonaws.com/v1/repos/MythicalMysfitsStreamingService-Repository",
+        "cloneUrlSsh": "ssh://git-codecommit.ap-southeast-2.amazonaws.com/v1/repos/MythicalMysfitsStreamingService-Repository",
+        "Arn": "arn:aws:codecommit:ap-southeast-2:918300033687:MythicalMysfitsStreamingService-Repository"
+    }
+}
+
+
+```
+
+
 ## Links
 https://github.com/aws-samples/aws-modern-application-workshop
