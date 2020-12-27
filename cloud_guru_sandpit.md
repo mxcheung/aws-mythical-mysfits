@@ -1,8 +1,12 @@
 
 cloud_user
+
 &1Vekhdvmd
+
 https://283426106268.signin.aws.amazon.com/console?region=us-east-1
+
 AKIAUD7MDFOOCNZ75P2Y
+
 GpXZBA0tcnaJv51+NXtO4NYpKOy+XkiaW1GyvM7a
 
 ============================================================================
