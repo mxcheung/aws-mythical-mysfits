@@ -60,3 +60,12 @@ REPLACE_ME_MYSFITS_API_ENDPOINT -> 'https://j9fokp4mi6.execute-api.ap-southeast-
     var cognitoUserPoolId = 'ap-southeast-2_l38vvj3ws';  // example: 'us-east-1_abcd12345'
     var cognitoUserPoolClientId = '4n5ml5sa0jqn4ot2u3mcaedv3g'; // example: 'abcd12345abcd12345abcd12345'
     var awsRegion = 'ap-southeast-2'; // example: 'us-east-1' or 'eu-west-1' etc.
+
+
+## Module-5
+
+```
+REPLACE_ME_WITH_ABOVE_CLONE_URL -> https://git-codecommit.ap-southeast-2.amazonaws.com/v1/repos/MythicalMysfitsStreamingService-Repository
+
+REPLACE_ME_API_ENDPOINT ->  https://j9fokp4mi6.execute-api.ap-southeast-2.amazonaws.com/prod/    // eg: 'https://ljqomqjzbf.execute-api.us-east-1.amazonaws.com/prod/'
+```
