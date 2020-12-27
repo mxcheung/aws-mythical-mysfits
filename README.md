@@ -259,6 +259,17 @@ git push
 Adding a Data Tier with Amazon DynamoDB
 https://github.com/aws-samples/aws-modern-application-workshop/tree/java/module-3
 
+```
+aws dynamodb create-table --cli-input-json file://~/environment/aws-modern-application-workshop/module-3/aws-cli/dynamodb-table.json
+aws dynamodb describe-table --table-name MysfitsTable
+aws dynamodb scan --table-name MysfitsTable
+aws dynamodb batch-write-item --request-items file://~/environment/aws-modern-application-workshop/module-3/aws-cli/populate-dynamodb.json
+cd ~/environment/MythicalMysfitsService-Repository
+git add .
+git commit -m "Add new integration to DynamoDB."
+git push
+```
+
 
 
 ## Links
