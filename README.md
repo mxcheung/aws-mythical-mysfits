@@ -270,6 +270,17 @@ git commit -m "Add new integration to DynamoDB."
 git push
 ```
 
+### Test the service
+
+http://mysfits-nlb-7cfb1105f45d2351.elb.ap-southeast-2.amazonaws.com/mysfits
+
+
+
+### Test the Website
+aws s3 cp --recursive ~/environment/aws-modern-application-workshop/module-3/web/ s3://cheungm-bucket-name-20201227/
+
+http://cheungm-bucket-name-20201227.s3-website-ap-southeast-2.amazonaws.com/
+
 
 
 ## Links
