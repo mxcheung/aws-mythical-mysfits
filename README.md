@@ -264,6 +264,9 @@ aws dynamodb create-table --cli-input-json file://~/environment/aws-modern-appli
 aws dynamodb describe-table --table-name MysfitsTable
 aws dynamodb scan --table-name MysfitsTable
 aws dynamodb batch-write-item --request-items file://~/environment/aws-modern-application-workshop/module-3/aws-cli/populate-dynamodb.json
+
+cp -r ~/environment/aws-modern-application-workshop/module-3/app/service/* ~/environment/MythicalMysfitsService-Repository/service/
+
 cd ~/environment/MythicalMysfitsService-Repository
 git add .
 git commit -m "Add new integration to DynamoDB."
