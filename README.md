@@ -333,6 +333,8 @@ https://j9fokp4mi6.execute-api.ap-southeast-2.amazonaws.com/prod/misfits
 
 Capturing User Behavior
 
+https://github.com/aws-samples/aws-modern-application-workshop/tree/java/module-5
+
 ```
 git clone   https://git-codecommit.ap-southeast-2.amazonaws.com/v1/repos/MythicalMysfitsStreamingService-Repository
 
